@@ -1,53 +1,99 @@
 :root {
-    --primary-text-color: #757575;
-    --second-text-color: #212121;
-    --title-text-color: #2196F3;
-    --white-color: #FFFFFF;
-    --studio-color: #000000;
+  --primary-text-color: #757575;
+  --second-text-color: #212121;
+  --title-text-color: #2196f3;
+  --white-color: #ffffff;
+  --studio-color: #000000;
+  --background-hero-roof: #2f303a;
 }
-
-
-
-
-
 
 .studio {
-    color: var(--studio-color);
+  color: var(--studio-color);
 }
 
-
 body {
-    background: var(--white-color);
-    color: var(--primary-text-color);
+  background: var(--white-color);
+  color: var(--primary-text-color);
 }
 
 .logo {
-    color: var(--title-text-color)
+  color: var(--title-text-color);
 }
+
+/* nav */
 
 .site-nav .link {
-    color: var(--second-text-color);
+  color: var(--second-text-color);
 }
 
-.site-nav .link:hover, 
+.site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
+
+.contact .list:hover,
+.contact .list:focus {
+  color: var(--title-text-color);
+}
+.list.tel {
+  color: rgba(117, 117, 117, 1);
+}
+.list.mail {
+  color: rgba(117, 117, 117, 1);
+}
+
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+
+/* advantges */
 
 .section-title {
-    color: var(--second-text-color);
+  color: var(--second-text-color);
 }
 
-/* team list */
+/* works */
+
+.section-work {
+  color: var(--second-text-color);
+}
+
+/* personals */
+
+.team {
+  color: var(--second-text-color);
+}
 
 .team-list .title {
-    color: var(--second-text-color);
+  color: var(--second-text-color);
 }
-.contact-list .link {
-    color: var(--title-text-color)
+.contact-list {
+  color: var(--title-text-color);
 }
 
-.contact-list .link:hover,
-.contact-list .link:focus {
-    color: var(--studio-color);
+/* footer */
+
+.list {
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-list .list:hover,
+.contact-list .list:focus {
+  color: var(--studio-color);
+}
+
+/* button */
+
+.button {
+  color: var(--second-text-color);
+  background-color: var(--white-color);
+}
+
+.button.primary {
+  background-color: var(--title-text-color);
+  color: var(--white-color);
+}
+
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--white-color);
 }
