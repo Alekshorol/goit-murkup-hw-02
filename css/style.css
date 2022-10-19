@@ -1,0 +1,53 @@
+:root {
+    --primary-text-color: #757575;
+    --second-text-color: #212121;
+    --title-text-color: #2196F3;
+    --white-color: #FFFFFF;
+    --studio-color: #000000;
+}
+
+
+
+
+
+
+.studio {
+    color: var(--studio-color);
+}
+
+
+body {
+    background: var(--white-color);
+    color: var(--primary-text-color);
+}
+
+.logo {
+    color: var(--title-text-color)
+}
+
+.site-nav .link {
+    color: var(--second-text-color);
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--title-text-color);
+}
+
+.section-title {
+    color: var(--second-text-color);
+}
+
+/* team list */
+
+.team-list .title {
+    color: var(--second-text-color);
+}
+.contact-list .link {
+    color: var(--title-text-color)
+}
+
+.contact-list .link:hover,
+.contact-list .link:focus {
+    color: var(--studio-color);
+}
