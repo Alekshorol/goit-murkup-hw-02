@@ -19,10 +19,11 @@
 }
 
 body {
-  background: var(--white-color);
+  background-color: var(--white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 .logo {
@@ -39,7 +40,6 @@ body {
 .site-nav .link {
   color: var(--second-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.2;
   text-decoration: none;
 }
@@ -49,20 +49,21 @@ body {
   color: var(--title-text-color);
 }
 
-.contact .list:hover,
-.contact .list:focus {
+.contact .link:hover,
+.contact .link:focus {
   color: var(--title-text-color);
+}
+.link.tel {
+  color: var(--mail-tel-cololr);
+  text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  line-height: normal;
 }
-.list.tel {
+.link.mail {
   color: var(--mail-tel-cololr);
   text-decoration: none;
-}
-.list.mail {
-  color: var(--mail-tel-cololr);
-  text-decoration: none;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .site-nav .link.current {
@@ -73,7 +74,6 @@ body {
 
 .button {
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   background-color: var(--title-text-color);
@@ -108,6 +108,11 @@ body {
   border: 0em;
   border-radius: 4px;
 }
+.buttom.secondary .link.hover,
+.buttom.secondary .link.focus: {
+  color: var(--white-color);
+  
+}
 
 /* Hero */
 .section.hero {
@@ -125,33 +130,26 @@ body {
 
 .section-title {
   color: var(--second-text-color);
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section.title {
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--second-text-color);
 }
 
 .feature-title {
-  font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
-}
-
-/* works */
-
-.section-work {
-  color: var(--second-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
 }
 
 /* personals */
 
 .team {
   color: var(--second-text-color);
-  color: var(--second-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
 }
@@ -175,11 +173,11 @@ body {
   color: var(--title-text-color);
 }
 
-.section-team {
+.team {
   background-color: var(--background-color-team);
 }
 
-.bgc {
+.back {
   background-color: var(--white-color);
 }
 
@@ -192,7 +190,6 @@ body {
 .address {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
   color: var(--white-color);
   text-decoration: none;
@@ -200,7 +197,6 @@ body {
 
 .list {
   color: var(--list-color);
-  text-decoration: none;
 }
 .contact-list .list:hover,
 .contact-list .list:focus {
@@ -209,6 +205,10 @@ body {
 
 .list {
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 /* portfolio */
