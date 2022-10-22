@@ -24,6 +24,7 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
+  font-style: normal;
 }
 
 .logo {
@@ -54,16 +55,16 @@ body {
   color: var(--title-text-color);
 }
 .link.tel {
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--mail-tel-cololr);
   text-decoration: none;
-  font-weight: 500;
-  line-height: normal;
 }
 .link.mail {
-  color: var(--mail-tel-cololr);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
   text-decoration: none;
-  font-weight: 500;
-  line-height: normal;
 }
 
 .site-nav .link.current {
@@ -85,7 +86,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.buttom.secondary {
+.button-secondary {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -97,7 +98,7 @@ body {
   background: var(--backgroun-color-button);
 }
 
-.buttom.all {
+.buttom-all {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -108,10 +109,11 @@ body {
   border: 0em;
   border-radius: 4px;
 }
-.buttom.secondary .link.hover,
-.buttom.secondary .link.focus: {
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: var(--title-text-color);
   color: var(--white-color);
-  
 }
 
 /* Hero */
@@ -129,15 +131,17 @@ body {
 /* advantges */
 
 .section-title {
+  font-size: 36px;
+  line-height: 1.16px;
+  letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+
+.project-section {
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.section.title {
-  font-size: 36px;
-  line-height: 1.16;
   color: var(--second-text-color);
 }
 
@@ -177,10 +181,6 @@ body {
   background-color: var(--background-color-team);
 }
 
-.back {
-  background-color: var(--white-color);
-}
-
 /* footer */
 
 .footer {
@@ -188,18 +188,18 @@ body {
 }
 
 .address {
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   line-height: 1.71;
   color: var(--white-color);
   text-decoration: none;
 }
 
-.list {
+.contacts {
   color: var(--list-color);
+  text-decoration: none;
 }
-.contact-list .list:hover,
-.contact-list .list:focus {
+.contact-list .contacts:hover,
+.contact-list .contacts:focus {
   color: var(--studio-color);
 }
 
@@ -207,13 +207,9 @@ body {
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-}
-
 /* portfolio */
 
-.image {
+.project-image {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -221,7 +217,7 @@ body {
   color: var(--second-text-color);
 }
 
-.text {
+.project-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
