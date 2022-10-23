@@ -48,6 +48,7 @@ body {
 .site-nav .link:focus {
   color: var(--title-text-color);
 }
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--title-text-color);
@@ -194,7 +195,7 @@ body {
 }
 .contact-list .contacts:hover,
 .contact-list .contacts:focus {
-  color: var(--white-color);
+  color: var(--title-text-color);
 }
 
 .list {
