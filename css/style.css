@@ -24,7 +24,6 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-  font-style: normal;
 }
 
 .logo {
@@ -49,22 +48,16 @@ body {
 .site-nav .link:focus {
   color: var(--title-text-color);
 }
-
-.contact .link:hover,
-.contact .link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--title-text-color);
 }
-.link.tel {
+.contact-link {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--mail-tel-cololr);
   text-decoration: none;
-}
-.link.mail {
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-  text-decoration: none;
+  font-weight: 500;
 }
 
 .site-nav .link.current {
@@ -156,9 +149,10 @@ body {
   color: var(--second-text-color);
   font-size: 36px;
   line-height: 1.17;
+  background-color: var(--background-color-team);
 }
 
-.title {
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -166,19 +160,19 @@ body {
   color: var(--second-text-color);
 }
 
-.team-title {
+.team-discription {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--primary-text-color);
 }
 
-.contact-list {
-  color: var(--title-text-color);
+.team-position {
+  background-color: var(--white-color);
 }
 
-.team {
-  background-color: var(--background-color-team);
+.contact-list {
+  color: var(--title-text-color);
 }
 
 /* footer */
@@ -200,7 +194,7 @@ body {
 }
 .contact-list .contacts:hover,
 .contact-list .contacts:focus {
-  color: var(--studio-color);
+  color: var(--white-color);
 }
 
 .list {
@@ -210,7 +204,6 @@ body {
 /* portfolio */
 
 .project-image {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -220,7 +213,6 @@ body {
 .project-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
